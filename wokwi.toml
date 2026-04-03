@@ -1,0 +1,4 @@
+[wokwi]
+version = 1
+firmware = "build_artifacts/esp32_master/esp32_master.ino.bin"
+elf = "build_artifacts/esp32_master/esp32_master.ino.elf"
