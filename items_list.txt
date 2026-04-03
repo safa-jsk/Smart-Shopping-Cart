@@ -1,0 +1,28 @@
+| Component                    | Qty | Unit Cost | Total    | Available |
+| :--------------------------- | :-- | :-------- | :------- | :-------- |
+| Arduino UNO R3               | 1   | 990       | 990      | True      |
+| ESP32 DevKit                 | 1   | 650       | 650      |           |
+| Smart Phone                  | 1   | 0         | 0        | True      |
+| TB6612FNG Dual Motor Driver  | 2   | 220       | 440      |           |
+| DC Gear Motors (4WD)         | 1   | 220       | 220      |           |
+| Servo wheel-lock / brake pad | 2   | 90        | 180      |           |
+| Ultrasonic sensor HC‑SR04    | 3   | 110       | 330      |           |
+| IMU MPU6050                  | 1   | 360       | 360      |           |
+| RFID reader RC522            | 1   | 230       | 230      |           |
+| RFID NFC Smart Card          | 5   | 30        | 150      |           |
+| Load cell                    | 1   | 380       | 380      |           |
+| HX711 amplifier              | 1   | 130       | 130      |           |
+| LCD 16x2 with I2C module     | 1   | 195       | 195      | True      |
+| 0.96" OLED (SSD1306)         | 1   | 250       | 250      |           | 
+| Buttons                      | 5   | 2         | 10       |           |
+| Buzzer (active)              | 1   | 10        | 10       | True      |
+| LEDs (R/G/B)                 | 10  | 1         | 10       | True      |
+| Battery case 4xAA            | 1   | 100       | 100      |           |
+| Battery 3.7V                 | 4   | 80        | 320      |           |
+| Voltage Converter            | 1   | 180       | 180      |           |
+| Jumper Wires (M-M, M-F, F-F) | 3   | 60        | 180      |           |
+| Resistors                    | 1   | 50        | 50       | True      |
+| Logic Level Shifter TXS0108E | 1   | 150       | 150      |           |
+| **Grand Total**              |     |           | **5515** | **4260**  |
+
+Per Person Cost: 4260 / 5 = 852 ≈ 850
