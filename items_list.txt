@@ -5,6 +5,7 @@
 | Smart Phone                  | 1   | 0         | 0        | True      |
 | TB6612FNG Dual Motor Driver  | 2   | 220       | 440      |           |
 | DC Gear Motors (4WD)         | 1   | 220       | 220      |           |
+| Power Distribution Board     | 1   | 330       | 330      |           |
 | Servo wheel-lock / brake pad | 2   | 90        | 180      |           |
 | Ultrasonic sensor HC‑SR04    | 3   | 110       | 330      |           |
 | IMU MPU6050                  | 1   | 360       | 360      |           |
@@ -23,6 +24,6 @@
 | Jumper Wires (M-M, M-F, F-F) | 3   | 60        | 180      |           |
 | Resistors                    | 1   | 50        | 50       | True      |
 | Logic Level Shifter TXS0108E | 1   | 150       | 150      |           |
-| **Grand Total**              |     |           | **5515** | **4260**  |
+| **Grand Total**              |     |           | **5845** | **4590**  |
 
-Per Person Cost: 4260 / 5 = 852 ≈ 850
+Per Person Cost: 4590 / 5 = 918 ≈ 920
