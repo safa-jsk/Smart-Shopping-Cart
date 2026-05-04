@@ -1,29 +1,25 @@
-| Component                    | Qty | Unit Cost | Total    | Available |
-| :--------------------------- | :-- | :-------- | :------- | :-------- |
-| Arduino UNO R3               | 1   | 990       | 990      | True      |
-| ESP32 DevKit                 | 1   | 650       | 650      |           |
-| Smart Phone                  | 1   | 0         | 0        | True      |
-| TB6612FNG Dual Motor Driver  | 2   | 220       | 440      |           |
-| DC Gear Motors (4WD)         | 1   | 220       | 220      |           |
-| Power Distribution Board     | 1   | 330       | 330      |           |
-| Servo wheel-lock / brake pad | 2   | 90        | 180      |           |
-| Ultrasonic sensor HC‑SR04    | 3   | 110       | 330      |           |
-| IMU MPU6050                  | 1   | 360       | 360      |           |
-| RFID reader RC522            | 1   | 230       | 230      |           |
-| RFID NFC Smart Card          | 5   | 30        | 150      |           |
-| Load cell                    | 1   | 380       | 380      |           |
-| HX711 amplifier              | 1   | 130       | 130      |           |
-| LCD 16x2 with I2C module     | 1   | 195       | 195      | True      |
-| 0.96" OLED (SSD1306)         | 1   | 250       | 250      |           | 
-| Buttons                      | 5   | 2         | 10       |           |
-| Buzzer (active)              | 1   | 10        | 10       | True      |
-| LEDs (R/G/B)                 | 10  | 1         | 10       | True      |
-| Battery case 4xAA            | 1   | 100       | 100      |           |
-| Battery 3.7V                 | 4   | 80        | 320      |           |
-| Voltage Converter            | 1   | 180       | 180      |           |
-| Jumper Wires (M-M, M-F, F-F) | 3   | 60        | 180      |           |
-| Resistors                    | 1   | 50        | 50       | True      |
-| Logic Level Shifter TXS0108E | 1   | 150       | 150      |           |
-| **Grand Total**              |     |           | **5845** | **4590**  |
-
-Per Person Cost: 4590 / 5 = 918 ≈ 920
+| Component                    | Qty | Unit Cost | Total    |
+| :--------------------------- | :-- | :-------- | :------- |
+| Arduino UNO R3               | 1   | 480       | 480      |
+| ESP32 DevKit                 | 1   | 420       | 420      |
+| Smart Phone                  | 1   | 0         | 0        |
+| L298N Motor Driver           | 2   | 120       | 240      |
+| DC Gear Motors (4WD) Chassis | 1   | 750       | 750      |
+| Ultrasonic Sensor HC‑SR04    | 4   | 60        | 240      |
+| MPU6050                      | 1   | 160       | 160      |
+| RFID Reader RC522            | 1   | 110       | 110      |
+| RFID NFC Smart Card          | 5   | 25        | 125      |
+| Load cell (10 kg) + HX711    | 1   | 220       | 220      |
+| LCD 16x2 with I2C module     | 1   | 195       | 195      |
+| Buttons                      | 3   | 2         | 5        |
+| Battery case 4xAA            | 1   | 45        | 45       |
+| Battery 3.7V                 | 4   | 95        | 380      |
+| Power Distribution Board     | 1   | 330       | 330      |
+| Jumper Wires (M-M, M-F, F-F) | 3   | 65        | 195      |
+| Resistors                    | 1   | 50        | 50       |
+| Breadboards (Small)          | 2   | 60        | 120      |
+| Soldering Iron               | 1   | 495       | 495      |
+| Soldering Wire               | 1   | 210       | 210      |
+| Soldering Rosin              | 1   | 20        | 20       |
+| Soldering Stand              | 1   | 110       | 110      |
+| **Grand Total**              |     |           | **4900** |

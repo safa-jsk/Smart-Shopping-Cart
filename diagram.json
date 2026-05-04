@@ -6,144 +6,166 @@
     {
       "type": "board-esp32-devkit-v1",
       "id": "esp",
-      "top": 0,
-      "left": 0,
-      "attrs": {
-        "firmware": "build_artifacts/esp32_master/esp32_master.ino.bin"
-      }
+      "top": -79.52,
+      "left": 523.2,
+      "attrs": { "firmware": "esp32_master.bin" }
     },
     {
       "type": "wokwi-arduino-uno",
       "id": "uno",
-      "top": 0,
-      "left": 400,
-      "attrs": {
-        "firmware": "build_artifacts/uno_slave/uno_slave.ino.hex"
-      }
+      "top": -85.8,
+      "left": 124.2,
+      "attrs": { "firmware": "uno_slave.hex" }
     },
-    { "type": "wokwi-buzzer", "id": "buzzer", "top": -100, "left": -100, "attrs": {} },
-    { "type": "wokwi-led", "id": "led_red", "top": -50, "left": -150, "attrs": { "color": "red" } },
-    { "type": "wokwi-led", "id": "led_green", "top": -50, "left": -100, "attrs": { "color": "green" } },
-    { "type": "wokwi-hx711", "id": "hx711", "top": 250, "left": -150, "attrs": {} },
     {
-      "type": "wokwi-rc522",
-      "id": "rc522",
-      "top": 130,
-      "left": 130,
+      "type": "board-mfrc522",
+      "id": "rfid",
+      "top": 213.24,
+      "left": 525.05,
+      "rotate": 90,
       "attrs": {}
     },
+    { "type": "chip-l298n", "id": "chip1", "top": -200.58, "left": 235.2, "attrs": {} },
+    { "type": "chip-l298n", "id": "chip2", "top": 154.62, "left": 235.2, "attrs": {} },
     {
       "type": "wokwi-lcd1602",
       "id": "lcd",
-      "top": -200,
-      "left": 120,
+      "top": -291.2,
+      "left": 514.4,
       "attrs": { "pins": "i2c" }
     },
+    { "type": "wokwi-mpu6050", "id": "mpu6050", "top": 80.62, "left": 741.52, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "sonar_f", "top": -334.5, "left": 187.9, "attrs": {} },
     {
       "type": "wokwi-hc-sr04",
-      "id": "ultrasonic_front",
-      "top": -150,
-      "left": 500,
-      "attrs": { "distance": "30" }
+      "id": "sonar_r",
+      "top": 279.9,
+      "left": 207.1,
+      "rotate": 180,
+      "attrs": {}
     },
     {
       "type": "wokwi-hc-sr04",
-      "id": "ultrasonic_left",
-      "top": -50,
-      "left": 700,
-      "attrs": { "distance": "100" }
+      "id": "sonar_l",
+      "top": -27.3,
+      "left": -119.3,
+      "rotate": 270,
+      "attrs": {}
     },
     {
-      "type": "wokwi-hc-sr04",
-      "id": "ultrasonic_right",
-      "top": 50,
-      "left": 700,
-      "attrs": { "distance": "100" }
+      "type": "wokwi-pushbutton",
+      "id": "btn_remove",
+      "top": 159.8,
+      "left": 912,
+      "attrs": { "label": "Remove" }
     },
-    { "type": "wokwi-servo", "id": "servo_brake", "top": 250, "left": 500, "attrs": {} },
-    { "type": "wokwi-mpu6050", "id": "mpu6050", "top": 200, "left": 650, "attrs": {} },
-    { "type": "wokwi-pushbutton", "id": "btn_start", "top": -260, "left": -120, "attrs": {} },
-    { "type": "wokwi-pushbutton", "id": "btn_stop", "top": -220, "left": -120, "attrs": {} },
-    { "type": "wokwi-pushbutton", "id": "btn_tare", "top": -180, "left": -120, "attrs": {} },
-    { "type": "wokwi-pushbutton", "id": "btn_mode", "top": -140, "left": -120, "attrs": {} },
-    { "type": "wokwi-pushbutton", "id": "btn_estop", "top": -100, "left": -120, "attrs": {} },
-    { "type": "wokwi-led", "id": "led_blue", "top": -50, "left": -50, "attrs": { "color": "blue" } },
-    { "type": "wokwi-resistor", "id": "r_lvl1", "top": 60, "left": -50, "attrs": { "value": "1000" } },
-    { "type": "wokwi-resistor", "id": "r_lvl2", "top": 100, "left": -50, "attrs": { "value": "2000" } },
-    { "type": "wokwi-text", "id": "note_tbd_a", "top": 350, "left": -380, "attrs": { "text": "TB6612FNG Chip 1 (controls all 4 motors) — not simulated in Wokwi\nCh.A (Left motors):  PWMA→D10  AIN1→A0  AIN2→A1  |  AO1/AO2 → FL + RL motors (in parallel)\nCh.B (Right motors): PWMB→D11  BIN1→A2  BIN2→A3  |  BO1/BO2 → FR + RR motors (in parallel)\nShared: STBY→D12 (HIGH=enabled)  VCC→5V  VM→battery (6–15V)  GND→GND" } },
-    { "type": "wokwi-text", "id": "note_tbd_b", "top": 460, "left": -380, "attrs": { "text": "TB6612FNG Chip 2 (optional — parallel with Chip 1 for extra current capacity, README lists 2x)\nAll signal pins wired in parallel with Chip 1: PWMA→D10  PWMB→D11  AIN1→A0  AIN2→A1  BIN1→A2  BIN2→A3  STBY→D12\nCh.A outputs → FL + RL motor leads (parallel with Chip 1 Ch.A)\nCh.B outputs → FR + RR motor leads (parallel with Chip 1 Ch.B)" } }
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_reset",
+      "top": 236.6,
+      "left": 912,
+      "attrs": { "label": "Reset" }
+    },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn_checkout",
+      "top": 313.4,
+      "left": 912,
+      "attrs": { "label": "Checkout" }
+    },
+    {
+      "type": "wokwi-hx711",
+      "id": "cell1",
+      "top": -83.8,
+      "left": 693.8,
+      "attrs": { "type": "5kg" }
+    },
+    {
+      "type": "wokwi-stepper-motor",
+      "id": "stepper1",
+      "top": 393.39,
+      "left": 65.97,
+      "rotate": 180,
+      "attrs": { "size": "17" }
+    },
+    {
+      "type": "wokwi-stepper-motor",
+      "id": "stepper2",
+      "top": 397.21,
+      "left": 326.83,
+      "rotate": 180,
+      "attrs": { "size": "17" }
+    },
+    {
+      "type": "wokwi-stepper-motor",
+      "id": "stepper3",
+      "top": -562.79,
+      "left": 58.03,
+      "attrs": { "size": "17" }
+    },
+    {
+      "type": "wokwi-stepper-motor",
+      "id": "stepper4",
+      "top": -562.79,
+      "left": 336.43,
+      "attrs": { "size": "17" }
+    }
   ],
   "connections": [
-    [ "esp:TX2", "uno:2", "green", [ "v0" ] ],
-    [ "uno:13", "r_lvl1:1", "blue", [ "v0" ] ],
-    [ "r_lvl1:2", "esp:RX2", "blue", [ "v0" ] ],
-    [ "r_lvl1:2", "r_lvl2:1", "gray", [ "v0" ] ],
-    [ "r_lvl2:2", "uno:GND.1", "black", [ "v0" ] ],
-    [ "esp:GND.1", "uno:GND.1", "black", [ "v0" ] ],
-    
-    [ "esp:15", "buzzer:1", "purple", [ "v0" ] ],
-    [ "esp:GND.2", "buzzer:2", "black", [ "v0" ] ],
-    
-    [ "esp:32", "led_red:A", "red", [ "v0" ] ],
-    [ "esp:GND.2", "led_red:C", "black", [ "v0" ] ],
-    [ "esp:33", "led_green:A", "green", [ "v0" ] ],
-    [ "esp:GND.2", "led_green:C", "black", [ "v0" ] ],
-    
-    [ "esp:26", "hx711:DT", "orange", [ "v0" ] ],
-    [ "esp:27", "hx711:SCK", "yellow", [ "v0" ] ],
-    [ "esp:GND.3", "hx711:GND", "black", [ "v0" ] ],
-    [ "esp:3V3", "hx711:VCC", "red", [ "v0" ] ],
-
-    [ "esp:5", "rc522:SDA", "green", [ "v0" ] ],
-    [ "esp:18", "rc522:SCK", "yellow", [ "v0" ] ],
-    [ "esp:23", "rc522:MOSI", "orange", [ "v0" ] ],
-    [ "esp:19", "rc522:MISO", "blue", [ "v0" ] ],
-    [ "esp:4", "rc522:RST", "purple", [ "v0" ] ],
-    [ "esp:GND.3", "rc522:GND", "black", [ "v0" ] ],
-    [ "esp:3V3", "rc522:VCC", "red", [ "v0" ] ],
-
-    [ "esp:21", "lcd:SDA", "green", [ "v0" ] ],
-    [ "esp:22", "lcd:SCL", "yellow", [ "v0" ] ],
-    [ "esp:GND.2", "lcd:GND", "black", [ "v0" ] ],
-    [ "esp:5V", "lcd:VCC", "red", [ "v0" ] ],
-    
-    [ "uno:4", "ultrasonic_front:TRIG", "cyan", [ "v0" ] ],
-    [ "uno:5", "ultrasonic_front:ECHO", "blue", [ "v0" ] ],
-    [ "uno:GND.2", "ultrasonic_front:GND", "black", [ "v0" ] ],
-    [ "uno:5V", "ultrasonic_front:VCC", "red", [ "v0" ] ],
-    
-    [ "uno:6", "ultrasonic_left:TRIG", "cyan", [ "v0" ] ],
-    [ "uno:7", "ultrasonic_left:ECHO", "blue", [ "v0" ] ],
-    [ "uno:GND.2", "ultrasonic_left:GND", "black", [ "v0" ] ],
-    [ "uno:5V", "ultrasonic_left:VCC", "red", [ "v0" ] ],
-    
-    [ "uno:8", "ultrasonic_right:TRIG", "cyan", [ "v0" ] ],
-    [ "uno:9", "ultrasonic_right:ECHO", "blue", [ "v0" ] ],
-    [ "uno:GND.3", "ultrasonic_right:GND", "black", [ "v0" ] ],
-    [ "uno:5V", "ultrasonic_right:VCC", "red", [ "v0" ] ],
-    
-    [ "uno:3", "servo_brake:PWM", "orange", [ "v0" ] ],
-    [ "uno:GND.3", "servo_brake:GND", "black", [ "v0" ] ],
-    [ "uno:5V", "servo_brake:V+", "red", [ "v0" ] ],
-
-    [ "uno:A4", "mpu6050:SDA", "green", [ "v0" ] ],
-    [ "uno:A5", "mpu6050:SCL", "yellow", [ "v0" ] ],
-    [ "uno:5V", "mpu6050:VCC", "red", [ "v0" ] ],
-    [ "uno:GND.3", "mpu6050:GND", "black", [ "v0" ] ],
-
-    [ "esp:2", "btn_start:1.l", "green", [ "v0" ] ],
-    [ "btn_start:2.l", "esp:GND.1", "black", [ "v0" ] ],
-    [ "esp:25", "btn_stop:1.l", "blue", [ "v0" ] ],
-    [ "btn_stop:2.l", "esp:GND.1", "black", [ "v0" ] ],
-    [ "esp:12", "btn_tare:1.l", "orange", [ "v0" ] ],
-    [ "btn_tare:2.l", "esp:GND.1", "black", [ "v0" ] ],
-    [ "esp:13", "btn_mode:1.l", "purple", [ "v0" ] ],
-    [ "btn_mode:2.l", "esp:GND.1", "black", [ "v0" ] ],
-    [ "esp:14", "btn_estop:1.l", "red", [ "v0" ] ],
-    [ "btn_estop:2.l", "esp:GND.1", "black", [ "v0" ] ],
-
-    [ "esp:0", "led_blue:A", "blue", [ "v0" ] ],
-    [ "led_blue:C", "esp:GND.2", "black", [ "v0" ] ]
+    [ "chip1:OUT1", "stepper3:A-", "red", [ "v0", "h-286.19" ] ],
+    [ "chip1:OUT1", "stepper4:A-", "red", [ "v0", "h59.41", "v-259.2" ] ],
+    [ "chip1:OUT2", "stepper3:B-", "black", [ "h0" ] ],
+    [ "chip1:OUT2", "stepper4:B-", "black", [ "h0" ] ],
+    [ "chip2:OUT1", "stepper1:B-", "red", [ "v0", "h-228.59" ] ],
+    [ "chip2:OUT1", "stepper2:B-", "red", [ "v0", "h49.81" ] ],
+    [ "chip2:OUT2", "stepper1:A-", "black", [ "h0" ] ],
+    [ "chip2:OUT2", "stepper2:A-", "black", [ "h0" ] ],
+    [ "chip1:EN A", "uno:4", "orange", [ "h0" ] ],
+    [ "chip1:IN1", "uno:5", "gold", [ "h0" ] ],
+    [ "chip1:IN2", "uno:6", "blue", [ "h0" ] ],
+    [ "chip2:EN A", "uno:7", "orange", [ "h0" ] ],
+    [ "chip2:IN1", "uno:8", "gold", [ "h0" ] ],
+    [ "chip2:IN2", "uno:9", "blue", [ "h0" ] ],
+    [ "uno:2", "esp:TX2", "red", [ "v0" ] ],
+    [ "uno:3", "esp:RX2", "blue", [ "v0" ] ],
+    [ "sonar_l:GND", "uno:GND.1", "black", [ "h0" ] ],
+    [ "sonar_r:GND", "uno:GND.1", "black", [ "v0" ] ],
+    [ "sonar_f:GND", "uno:GND.1", "black", [ "v0" ] ],
+    [ "sonar_l:VCC", "uno:5V", "red", [ "h0" ] ],
+    [ "sonar_r:VCC", "uno:5V", "red", [ "v0" ] ],
+    [ "sonar_f:VCC", "uno:5V", "red", [ "v0" ] ],
+    [ "sonar_l:TRIG", "uno:10", "orange", [ "h0" ] ],
+    [ "sonar_l:ECHO", "uno:11", "gold", [ "h0" ] ],
+    [ "sonar_r:TRIG", "uno:A0", "orange", [ "v0" ] ],
+    [ "sonar_r:ECHO", "uno:A1", "gold", [ "v0" ] ],
+    [ "sonar_f:TRIG", "uno:A3", "orange", [ "v0" ] ],
+    [ "sonar_f:ECHO", "uno:A2", "gold", [ "v0" ] ],
+    [ "uno:GND.3", "esp:GND.1", "black", [ "v0" ] ],
+    [ "lcd:GND", "esp:GND.1", "black", [ "h134.4", "v326.4" ] ],
+    [ "lcd:VCC", "esp:VIN", "red", [ "h-28.8", "v326.5" ] ],
+    [ "cell1:GND", "esp:GND.1", "black", [ "h-48", "v124.5" ] ],
+    [ "cell1:VCC", "esp:VIN", "red", [ "h-28.8", "v-76.8", "h-182.4", "v182.4" ] ],
+    [ "mpu6050:VCC", "cell1:VCC", "red", [ "v-86.4", "h-115.12" ] ],
+    [ "mpu6050:GND", "esp:GND.1", "black", [ "v-19.2", "h-95.92", "v-28.8" ] ],
+    [ "rfid:3.3V", "esp:3V3", "green", [ "v0" ] ],
+    [ "rfid:GND", "esp:GND.1", "black", [ "v-57.6", "h19.2", "v-57.6" ] ],
+    [ "btn_remove:2.l", "esp:GND.1", "black", [ "h-19.2", "v-38.2", "h-249.6", "v-86.4" ] ],
+    [ "btn_reset:2.l", "btn_remove:2.l", "black", [ "h-19.2", "v-76.8" ] ],
+    [ "btn_checkout:2.l", "btn_remove:2.l", "black", [ "h-38.4", "v-153.6" ] ],
+    [ "lcd:SDA", "esp:D18", "orange", [ "h124.8", "v240.2" ] ],
+    [ "lcd:SCL", "esp:D19", "gold", [ "h115.2", "v221.1" ] ],
+    [ "mpu6050:SDA", "esp:D21", "blue", [ "v0" ] ],
+    [ "mpu6050:SCL", "esp:D15", "green", [ "v0" ] ],
+    [ "rfid:RST", "esp:D26", "violet", [ "v-19.2", "h-153.6", "v-144" ] ],
+    [ "rfid:SDA", "esp:D27", "gold", [ "v0" ] ],
+    [ "rfid:MOSI", "esp:D5", "red", [ "v-105.6", "h9.6", "v-67.2" ] ],
+    [ "rfid:MISO", "esp:D13", "blue", [ "v28.8", "h-144", "v-153.6" ] ],
+    [ "rfid:SCK", "esp:D14", "green", [ "v19.2", "h-192", "v-163.2" ] ],
+    [ "cell1:SCK", "esp:D23", "blue", [ "v-48.8", "h-76.31" ] ],
+    [ "cell1:DT", "esp:D22", "orange", [ "h0" ] ],
+    [ "esp:D25", "btn_remove:1.r", "green", [ "h0" ] ],
+    [ "esp:D33", "btn_reset:1.r", "green", [ "h489.6", "v249.6", "h-9.6" ] ],
+    [ "esp:D32", "btn_checkout:1.r", "green", [ "h508.8", "v336", "h-9.6" ] ]
   ],
   "dependencies": {}
 }
